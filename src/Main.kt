@@ -62,13 +62,19 @@ class MainWindow : JFrame(), ActionListener {
      * Populate the UI with UI controls
      */
     private fun addControls() {
+        val font = Font(Font.SANS_SERIF, Font.PLAIN, 22)
+
         greetingLabel = JLabel("Hello, World!")
         greetingLabel.horizontalAlignment = SwingConstants.CENTER
         greetingLabel.bounds = Rectangle(50, 50, 500, 100)
+        greetingLabel.font = font
         add(greetingLabel)
 
         helloButton = JButton("Click Me!")
         helloButton.bounds = Rectangle(50,200,500,100)
+        helloButton.background = Color(120,120,200)
+        helloButton.font = font
+        helloButton.foreground = Color.DARK_GRAY
         helloButton.addActionListener(this)     // Handle any clicks
         add(helloButton)
     }
