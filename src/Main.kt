@@ -72,7 +72,8 @@ class MainWindow : JFrame(), ActionListener, KeyListener {
         greetingLabel.font = font
         add(greetingLabel)
 
-        textbox = JTextField()
+        t
+        extbox = JTextField()
         textbox.bounds = Rectangle(50, 175, 500, 100)
         textbox.font = font
         textbox.addActionListener(this)
